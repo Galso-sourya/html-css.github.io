@@ -1,0 +1,1095 @@
+p {
+    color:white;
+    background-color:gray;
+    font-size:50%
+     font-family: Aerial;
+}
+h1 { color: orange; }
+h2, h3{
+    color: pink; 
+    background-color:black;
+}
+#intro .first em {
+    color: pink; 
+    background-color:gray;
+}
+/*this is a comment.The cascade is based on below priority: 
+1) User styles
+2) Website author styles
+3) Browser's default styles
+
+I mean the highest priority is the the user's style. A user can use his own styles by going to settings of the browser and attaching to it his/her own CSS rules which are places in a file,
+If there is no user style, the website owner's style will be used.
+If there are no any of the above, browser will use it's own way of default styling.*/
+p.serif {
+    font-family: "Times New Roman", Times, serif;
+}
+p.sansserif {
+    font-family: Helvetica, Arial, sans-serif;
+}
+p.monospace {
+    font-family: "Courier New", Courier, monospace;
+}
+p.cursive {
+    font-family: Florence, cursive;
+}
+p.fantasy {
+    font-family: Blippo, fantasy;
+}
+/*There are two types of font family names: 
+- font family: a specific font family (like Times New Roman or Arial)
+- generic family: a group of font families with a similar look (like Serif or Monospace)
+Separate each value with a comma to indicate that they are alternatives. 
+If the name of a font family is more than one word, it must be in quotation marks: "Times New Roman".
+Should I define that time new roman is part of serif or times ... I can't understand !!!!
+
+I get it ✋😃 
+If times new roman not available in browser it will pick times if also not available it will pick similar from generic family which is serif 😊
+*/
+p.small {
+    font-size: small;
+}
+p.medium {
+    font-size: medium;
+}
+p.large {
+    font-size: large;
+}
+p.xlarge {
+    font-size: x-large;
+}
+p.italic {
+    font-style: italic;
+}
+p.oblique{
+    font-style:oblique;
+}
+p.light {   
+    font-weight: lighter;
+}
+p.bold {   
+    font-weight: bold;
+}
+p.bolder {
+    font-weight: bolder;
+}
+/*in addition using them,we can use font-weight:100 to 900, font-weight:400; equal to normal fon weight, font-wight:700; equal to bold...*/
+p.normal {
+    font-variant: normal;
+}
+p.small {
+    font-variant: small-caps;
+}
+/*Not every font supports CSS font-variant, so be sure to test before you publish.
+The font property provides a concise way to specify all of the font properties with one style rule. One attribute that is included within font is line-height, which specifies the distance between two lines of text. Each font attribute can be indicated on the line, separated by spaces, except for line-height, which is used with font-size and separated by a slash.
+font: font-style font-variant font-weight font-size/line-height font-family
+*/
+p.example {
+    color: green;
+}
+/*there are 140 supported names for color! http://www.w3schools.com/colors/colors_hex.asp
+Another way of defining colors is using hexadecimal values and RGB. 
+Hexadecimal form is a pound sign (#) followed by at most, 6 hex values (0-F).
+RGB defines the individual values for Red, Green, and Blue.
+*/
+h5 {
+    color: #0000FF;
+}
+p.example0 {
+    color: rgb(255,0,0);
+}
+
+/*RGBA(a,b,c,d) it means
+a=value of red(0-255)
+b=value of green(0-255)
+c=value of blue(0-255)
+d=value of opacity(0-1)
+we have one more option besides these rgb, rgba which are hsl and hsla.
+hsl - Hue, Saturation, Lighness
+hsla - Hue, Saturation, Lightness, alpha(opecity)
+--------
+>Hue is the degree on the color between 0-360.
+I.e. - 0 and 360 is for red
+      - 120 is green
+      - 280 is purple 
+>Saturation is colour % value (0-100)%
+>Lightness is also a % value to make the color lighter and darker. where 0% - black and 100% - white.
+> opecity we use to make the text color transparent. the value can be between 0.0 to 1.0 where 0.0 is fully transparent and 1.0 is fully opaque.
+
+for example
+hsl (120, 100%, 75%) - light green
+hsla (120, 100%, 75%, 0.5) - light green with half transparency.
+
+Test this guys..
+Thanks guys, I hope it is helpful for u..
+Methods change "Paraghraph" color to RED :
+
+p { color: red; }
+p { color: #f00; }
+p { color: #ff0000; }
+p { color: rgb(255,0,0); }
+p { color: rgb(100%, 0%, 0%); }
+p { color: hsl(0, 100%, 50%); }
+
+50% translucent
+p { color: rgba(255, 0, 0, 0.5); } 
+p { color: hsla(0, 100%, 50%, 0.5); }
+*/
+p.left {
+    text-align: left;
+}
+p.right {
+    text-align: right;
+}
+p.center {
+    text-align: center;
+}
+p.justify{
+    text-align:justify;
+}
+/*When text-align is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (as in magazines and newspapers).*/
+td.top {
+    vertical-align: top;
+}
+td.middle {
+    vertical-align: middle;
+}
+td.bottom {
+    vertical-align: bottom;
+}
+span.baseline {
+    vertical-align: baseline;
+}
+span.sub {
+    vertical-align: sub;
+}
+span.super {
+    vertical-align: super;
+}
+span.pixel {
+    vertical-align: -10px;
+}
+/*Instead of px values, you can use pt (points), cm (centimeters) and % (percentage) values.*/
+.main {
+    height: 150px; width: 400px;
+    background-color: LightSkyBlue;
+    display: inline-table;
+}
+.paragraph {
+    display: table-cell;
+    vertical-align: middle;
+}
+p.none {
+    text-decoration: none;
+}
+p.inherit {
+    text-decoration: inherit;
+}
+p.overline {
+    text-decoration: overline;
+}
+p.underline {
+    text-decoration: underline;
+}
+p.line-through {
+    text-decoration: line-through;
+}
+p.blink {
+    text-decoration: blink;
+}
+/*blink is ignored by most browsers
+The text-indent property specifies how much horizontal space should be left before the beginning of the first line of the text. Property values are length (px, pt, cm, em, etc.), %, and inherit.
+Negative values are allowed. The first line will be indented to the left if the value is negative.
+*/
+p.indentation {
+    text-indent: 60px;
+}
+/*You should use "percentage (%)" instead of pixel..b'cause it will auto adjust the paragraph-space according to users screen..
+The text-shadow property adds shadow to text. 
+It takes four values: the first value defines the distance of the shadow in the x (horizontal) direction, the second value sets the distance in the y (vertical) direction, the third value defines the blur of the shadow, and the fourth value sets the color.
+To create multiple shadows, the shadows are separated with a comma.
+*/
+h6 {
+    color: blue;
+    font-size: 30pt;
+    text-shadow: 5px 2px 4px grey;
+}
+h6.shadow {
+    color: black;
+    font-size: 30pt;
+    text-shadow: 5px 2px 4px red, 3px 3px 4px orange, 1px 4px 4px yellow, -1px 4px 4px green, -3px 3px 4px #00FFFF, -5px 2px 4px purple;
+}
+p.capitalize {
+    text-transform: capitalize;
+}
+/*it's good to use text- transform: uppercase ,lowercase,capitalize;*/
+p.positive { 
+    letter-spacing: 4px;
+}
+/*p.normal { 
+    word-spacing: normal;
+}
+p.px { 
+    word-spacing: 30px;
+}
+To define an extra space between words, you can use positive measurement values like px, pt, pc, cm, mm, inches, em, and ex.
+The nowrap value makes the text continue on the same line until a <br> tag is encountered, and also collapses all sequences of whitespace into a single whitespace.
+*/
+p.nowrap {
+    white-space: nowrap;
+}
+/*I’m trying to be explain it for myself and if it’s right even you can use it to understand! 
+
+▪️nowrap = “Nowrap” neglects white-spaces & line-breaks but will EXTEND BEYOND BROWSER, so the browser will create a slider to slide across the screen to see it! 
+
+▪️pre-warp = “Pre-Warp” prints exactly what we type without any changes in spaces or line breaks but BROWSER will render & fit it inside the screen,
+
+▪️pre = “Pre” is very similar to “Pre-Warp” But the only difference is Pre will EXTEND BEYOND SCREEN and same as nowrap a slider is created to slide across the screen! 
+
+▪️pre-line = “Pre-Line” neglects white spaces but it PRINTS LINE-BREAK (without <br /> element)! ,
+
+If I’m wrong just let me know✌🏻
+A little more Explaination about box model
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent.
+When setting a background-color to a box, it covers the content area, as well as the padding.
+
+*/
+p.border {
+    padding: 10px;    
+    border: 5px solid green;
+}
+/*The different types of border styles are:
+1. none
+2. hidden
+3. dotted
+4. dashed
+5. solid
+6. double
+7. groove
+8. ridge
+9. inset
+10. outset
+and we can also use inherit.
+IF YOU WANT CURVED OR ROUND EDGE BORDER USE :
+
+ border-radius
+
+For eg
+
+h1
+{
+border-radius:50%;   // it can be in px or % etc
+}
+You can specify seperate size, style and color for top, right, bottom and left border. probably this part comes later. :)
+
+p {
+    padding: 10px;    
+    border-right: 5px solid green;
+    border-left: 10px solid yellow;
+    border-top: 2px solid red;
+    border-bottom: 7px solid blue;
+}
+
+*/
+div.a {
+    border: 5px solid green;    
+    width: 90px;
+    height: 90px;
+    background-image: url("http://www.sololearn.com/uploads/css_logo.png");
+background-repeat: no-repeat;
+background-attachment:;scroll;
+}
+/*To set the minimum and maximum height and width of an element, you can use the following properties:
+
+min-width - the minimum width of an element
+min-height - the minimum height of an element
+max-width - the maximum width of an element
+max-height - the maximum height of an element
+To specify more than one image, just separate the URLs with commas.
+The background repeat property specifies how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all. 
+
+The repeat-x will repeat a background image only horizontally.
+The background-attachment property sets whether a background image is fixed or scrolls with the rest of the page.
+Even if an element has a scrolling mechanism, a "fixed" background doesn't move with the element.
+we can even set the position of the image by using 
+background-position property 
+for eg:-
+body{
+background-image:url("css_logo.png");
+background-position: right top;
+}
+When you set the background-attachment to scroll, the background image will scroll with the rest of the content.
+To shorten the code,we can specify all background properties in single property called shorthand property.
+For eg:-
+body{
+background: green url("css_logo.png") no-repeat right top;
+}
+The order is 
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+
+*/
+ol.lower-alpha {
+    list-style-type: lower-alpha;
+}
+ul.circle {
+    list-style-type: circle;
+}
+ul.square {
+    list-style-type: square;
+}
+/*There are also other list properties, such as:
+list-style-image - specifies an image to be used as the list item marker.
+list-style-position - specifies the position of the marker box (inside, outside).
+outside" is the default value.
+*/
+ul.imagee {
+    list-style-image: url("http://www.sololearn.com/images/bullet.jpg");
+    list-style-position: inside;
+}
+/*ul {
+   list-style: square outside none;
+}*/
+table {
+    border-collapse: separate;
+    border-spacing: 20px 40px;
+}
+/*The border-collapse property specifies whether the table borders are collapsed into a single border or separated as default. If the borders are separate, the border-spacing property can be used to change the spacing.
+*/
+caption {
+    caption-side: top;
+}
+/*The empty-cells property specifies whether or not to display borders and background on empty cells in a table. 
+Possible values are:
+show: the borders of an empty cell are rendered
+hide: the borders of an empty cell are not drawn
+The table-layout specifies how the width of table columns is calculated. The possible values are:
+auto - when column or cell width are not explicitly set, the column width will be in proportion to the amount of content in the cells that make up the column
+fixed - when column or cell width are not explicitly set, the column width will not be affected by the amount of content in the cells that make up the column.
+
+The table layout is set to auto by default. 
+
+*/
+table.fixed {
+    border-collapse: separate;
+    width: 100%;
+    border: 1px solid gray;
+    table-layout: fixed;
+}
+/*Links can be styled with any CSS property (e.g., color, font-family, background, etc.).
+In addition, links can be styled differently, depending on what state they are in. The following pseudo selectors are available:
+a:link - defines the style for normal unvisited links
+a:visited - defines the style for visited links
+a:active - a link becomes active once you click on it
+a:hover - a link is hovered when the mouse is over it
+When setting the style for several link states, there are some order rules:
+ - a:hover MUST come after a:link and a:visited
+ - a:active MUST come after a:hover
+
+*/
+a:hover {
+    color: red;
+}
+/*By default, text links are underlined by the browser.
+One of the most common uses of CSS with links is to remove the underline. In the example below, the text-decoration property is used to remove the underline.
+a:link {
+    text-decoration: none;
+}
+There are numerous other possible values for the cursor property, such as:
+default - default cursor
+crosshair - cursor displays as crosshair
+pointer - cursor displays hand icon
+The list of possible values is quite long.
+Every element on a web page is a rectangular box.The display property determines how that rectangular box behaves. A block element is an element that takes up the fullest width available, with line breaks before and after.
+
+*/
+span.class {
+    display: block;}
+/*An inline element only takes up as much width as necessary, and does not force line breaks*/
+span.class0 {
+    display: inline;}
+/*display:none hides an element, so it does not take up any space. The element will be hidden, and the page will be displayed as if the element is not there.
+There are plenty of other display values, such as list-item, table, table-cell, table-column, grid, etc. Just play with values to see the difference.
+The difference between display:none and visibility: hidden are take up space, or not.
+
+h1 {
+    display: none; /* The element will be hidden that will not take up any space */
+}
+/*
+span {
+    visibility: hidden; /* The element will be hidden that will take up space *//*
+}
+display property and all its values..
+<display-outside> values
+display: block;
+display: inline;
+display: run-in;
+
+<display-inside> values 
+display: flow;
+display: flow-root;
+display: table;
+display: flex;
+display: grid;
+display: ruby;
+display: subgrid;
+
+ <display-outside> plus <display-inside> values 
+display: block flow;
+display: inline table;
+display: flex run-in;
+
+<display-listitem> values 
+display: list-item;
+display: list-item block;
+display: list-item inline;
+display: list-item flow;
+display: list-item flow-root;
+display: list-item block flow;
+display: list-item block flow-root;
+display: flow list-item block;
+
+<display-internal> values 
+display: table-row-group;
+display: table-header-group;
+display: table-footer-group;
+display: table-row;
+display: table-cell;
+display: table-column-group;
+display: table-column;
+display: table-caption;
+display: ruby-base;
+display: ruby-text;
+display: ruby-base-container;
+display: ruby-text-container;
+
+<display-box> values 
+display: contents;*/
+.skills ul li{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: -15px;
+}
+/*
+Elements can be positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the positioning method.
+HTML elements are positioned static by default. A static positioned element is always positioned according to the normal flow of the page.
+Static positioned elements are not affected by the top, bottom, left, and right properties.
+An element with a fixed position is positioned relative to the browser window, and will not move even if the window is scrolled.
+The position can be specified using one or more of the properties top, right, bottom, and left. 
+In the example below, the paragraph is fixed to 30px from the top and 5px from the right.
+*/
+p.position_fixed {
+    position: fixed;
+    top: 30px;
+    right: 5px;
+    color: red;
+}
+.me p span {
+    background: green;
+    color: white;
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+.skill_prog{
+    width: 100%;
+    height: 25px;
+    position: relative;
+}
+.skill_prog span{
+    position: absolute;
+    height: 50%;   
+    background: #2F5A78;
+    padding-right: 50px;
+}
+/*With CSS float, an element can be pushed to the left or right, allowing other elements to wrap around it.
+The values for the float property are left, right, and none. 
+
+*/
+img {
+    float: left;
+    width: 120px;
+    margin-right: 10px;
+}
+.flo p {
+    width: 120px;
+    float: left;
+}
+/*There are four values for the overflow property: visible (the default value), scroll, hidden, and auto. 
+
+The value scroll results in clipped overflow, but a scrollbar is added, so the rest of the content may be seen.
+*/
+.scroll {
+    width: 150px;
+    height: 150px;
+    background-color: LightBlue;
+    float: left;
+    overflow: scroll;
+}
+/*auto - If overflow is clipped, a scroll-bar should be added to make it possible to see the rest of the content.
+hidden - The overflow is clipped, and the rest of the content will be invisible.
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+The red box overlaps the blue box, because it was placed later in the HTML markup. 
+The z-index property can change this order.
+The z-index works only on positioned elements (position:absolute, position:relative, or position:fixed).
+*/
+.blue { 
+    background-color: #8EC4D0;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+}
+.red {
+    background-color: #FF4D4D;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+/*Assigning a higher z-index value to the blue div and a lower z-index value to the red div will result in the following:*/
+
+.blue0 {
+z-index: 3;
+    background-color: #8EC4D0;
+    position: relative;
+    margin-bottom: 15px;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+}
+.red0 {
+z-index: 2;
+    background-color: #FF4D4D;
+    position: relative;
+    width: 120px;
+    height: 120px;
+    color: #FFF;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+/*if you set z-inded value "-1" , it will push element to behide all other elements.
+Please note that,if the element is positioned static ,the z-index won't work.
+For example, the prefix for Safari and Chrome is -webkit. The border-radius property is currently supported in Chrome, Safari, and Mozilla, as long as it is accompanied by the browser prefix.
+To specify the border-radius in Chrome and Safari, the following syntax is used:
+The prefix is added to the property to make it work in the unsupported browsers. So, you might end up with multiple definitions of the same property, each with the specific browser prefix.
+While most browsers today will work without prefixes, it is essential to know these for backwards capability and understanding older codes.
+
+*/
+
+.round {
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    border:1px solid green;
+    width:200px;
+    padding:25px;
+    box-shadow: 10px 10px #888888;
+}
+/*It might feel annoying and repetitive to have to write the properties two to five times to get them to work in all browsers, but it's temporary. As browsers improve, they add support for the standards based version of the properties, and you can remove the prefixed versions.
+These are some vendor prefixes:
+Safari: -webkit-
+Chrome: -webkit-
+iOS: -webkit-
+Android: -webkit-
+Opera: -o-
+Firefox: -moz-
+Edge: -ms-
+Internet Explorer: -ms-
+And some supported properties : https://www.w3schools.com/cssref/css3_browsersupport.asp
+Hope this information will be helpful!
+With CSS3, you can give any element "rounded corners" by using the border-radius property.
+Specific border radius values can be applied for the border-radius property in the following order: top-left, top-right, bottom-right, bottom-left.
+border-radius: 0 0 20px 20px;
+To create a circle, the border radius should be half of the height and the width. 
+
+The rectangle in the example below has a width and height of 200px. By setting the border radius to 100px, the corners will be rounded to form a circle:
+
+*/
+.n {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color: green;
+    color: white;
+}
+/*To make a circle with CSS3, you can also use:
+
+div {
+    border-radius: 100%;
+}
+This is good if you want to, for example, make a profile picture circular on an Account Settings page and similar situations.
+The CSS3 box-shadow property applies shadow to elements.
+Components of the box-shadow property are decoded by browsers in the following manner:
+- The first length for the horizontal offset will cast the shadow to the right of the box (required)
+- The second length is for the vertical offset that will cast the shadow to below the box (required)
+- The color of the shadow (optional)
+Besides color, there are also two optional values for the box-shadow element, which are blur and spread.
+The blur and spread values should be used before the color value.
+Negative values can also be used for the box-shadow property.
+
+horizontal offset - the shadow will be to the left of the box
+vertical offset - the shadow will be above the box
+blur radius - negative values are not allowed
+spread radius - negative values will cause the shadow to shrink
+The "inset" keyword allows to draw an inner shadow in the box. To show an inset shadow, just add the inset keyword:
+You can simultaneously create inner and outer shadows by separating each shadow with a comma.
+*/
+.wows {
+    width: 300px;
+    height: 100px;
+    background-color: #9ACD32;
+    box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9, 30px 0 20px 30px #B0E0E6;
+
+    margin-left:30px;
+    margin-top:30px;
+}
+.chori {
+    width: 300px;
+    height: 100px;
+    background-color: #9ACD32;
+    box-shadow: inset 10px 10px 1px green, inset -10px -10px 1px lightgreen;
+}
+/*Apply to all four sides
+padding: 1em;
+vertical | horizontal
+padding: 5% 10%;
+top | horizontal | bottom
+padding: 1em 2em 2em;
+top | right | bottom | left
+padding: 5px 1em 0 2em;*/
+.sob {
+    background:url("http://www.sololearn.com/images/bg2.jpg");
+}
+.sob nav {
+    padding: 50px 0;
+    min-width: 500px; 
+}
+.sob nav ul {
+    background: linear-gradient(90deg, 
+     rgba(255, 255, 255, 0) 0%, 
+     rgba(255, 255, 255, 0.2) 25%, 
+     rgba(255, 255, 255, 0.2) 75%, 
+     rgba(255, 255, 255, 0) 100%);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1),
+     inset 0 0 1px rgba(255, 255, 255, 0.6);
+}
+/*The <ul> tag has been styled with a background gradient that is white and transparent. 
+Two box-shadow values have been added, one for an outer, dark shadow; and one for an inner, light edge.
+*/
+.sob nav ul li {
+    display: inline-block;
+}
+/*this one make the list ro appear in 1 line*/
+.sob nav ul li a {
+    padding: 10px; 
+    color: #FFFFFF;
+    font-size: 18px;
+    font-family: Arial;
+    text-decoration: none;
+    display: block;
+ }
+/*Pseudo elements are used to select specific parts of an element.
+There are five pseudo elements in CSS, each starting with a double colon (::):
+
+::first-line - the first line of the text in a selector
+::first-letter - the first letter of the text in a selector
+::selection - selects the portion of an element that is selected by a user
+::before - inserts some content before an element
+::after - inserts some content after an element
+*/
+p.batash::first-line {
+    color: #589432;
+}
+#parent p:first-child {
+    color: green;
+    text-decoration: underline;
+}
+#parent p:last-child {
+    color: green;
+    text-decoration: underline;   
+}
+/*A pseudo-class starts with a ":" (colon).
+p:hover::before {
+    content: url("http://www.sololearn.com/images/bullet.jpg");
+}
+
+The image then appears only when we put the cursor over the paragraph.
+The word-wrap property allows long words to be broken and wrapped into the next line. It takes two values: normal and break-word. 
+
+*/
+p.wrap {
+    width: 210px; 
+    height: 100px;
+    border: 1px solid #000000;
+    word-wrap: normal;
+}
+/*The @font-face rule allows custom fonts to be loaded into a webpage. 
+With the help of this rule, designs are no longer limited to the fonts that are installed on a user's computer. 
+
+In Internet Explorer 8 and earlier, the URL must point to an Embedded OpenType (eot) file, while Firefox, Chrome, etc. support True Type Fonts (ttf) fonts and OpenType Fonts (otf).
+In the @font-face rule, you must first define a name for the font (e.g., myFirstFont), and then point to the font file.
+Each form of the font family must be declared using the @font-face rule.
+<h1>This is Our Headline</h1>
+@font-face {
+  font-family: Delicious; 
+  src: url('Delicious-Roman.otf'); 
+} 
+@font-face { 
+  font-family: Delicious; 
+  font-weight: bold; 
+  src: url('Delicious-Bold.otf'); 
+}
+h1{
+   font-family: Delicious, sans-serif; 
+}
+Internet Explorer has a built-in bug when multiple @font-face rules are defined. Using #iefix as shown below fixes the problem:
+@font-face { 
+   font-family: Delicious; 
+   src: url('Delicious-Roman.ttf');
+   src: url('Delicious-Roman.eot?#iefix'); 
+}
+CSS3 gradients enable you to display smooth transitions between two or more specified colors. CSS3 defines two types of gradients: Linear and Radial. 
+
+To create a linear gradient, you must define at least two color stops. Color stops are the colors among which you want to render smooth transitions. You can also set a starting point and a direction - or an angle - along with the gradient effect.
+In the example below, the colors blue and black are used to create a linear gradient from top to bottom.
+
+*/
+.gradient {
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;  
+    background: linear-gradient(DeepSkyBlue, Black);
+}
+/*Colors can be added one after the other, separated with a comma
+*/
+.ab {
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;  
+    background: linear-gradient(blue, yellow, green, pink, white);
+}
+/*Color stop positions can be specified for each color.
+background: linear-gradient(blue 20%, yellow 30%, green 85%);*/
+div.first {
+    float: left;
+    width: 300px; 
+    height: 100px;
+    margin: 4px;
+    color: #FFF;  
+    background:-webkit-linear-gradient(left, blue, green, white);
+    background:-moz-linear-gradient(left, blue, green, white);
+    background:-ms-linear-gradient(left, blue, green, white);
+} 
+/*left, right, top, and bottom are supported values for the gradient direction. You can also use their various combinations to specify direction (e.g., bottom right)
+As an alternative to predefined directions (bottom, top, right, left, bottom right, etc.), you can control the gradient's direction by specifying an angle.
+
+The angle is specified as an angle extending between a horizontal line and the gradient line. In other words, 0deg creates a left-to right-gradient, while 90deg generates a bottom-to-top gradient.
+background: -ms-linear-gradient(100deg, blue, green, white);
+The repeating-linear-gradient() function is used to repeat a linear gradient:
+background: repeating-linear-gradient(blue, green 20px);
+To create a radial gradient, you must define at least two color stops. 
+The radial gradient is defined by its center.
+background: radial-gradient(position, shape or size, color-stops);
+The first value defines the gradient position. We can use a descriptive keyword, such as top, bottom, center, or left; or we can specify, for example, 50% 50% to set the gradient at the center or 0% 0% to set the gradient to start at top left.
+
+The second value defines the shape and the gradient size. There are two arguments to shape gradients: The first is the ellipse, which is the default; and the second is the  circle.
+Lastly, the third value defines the color combination.
+background: -ms-radial-gradient(circle, green, yellow, blue);
+*/
+
+#rainbow {
+    background-color:white;
+    height:205px;
+    width:410px;
+    border-radius:410px 410px 0 0;
+    background:-moz-radial-gradient(bottom,white 50px,#9400D3 50px ,#4B0082 85px ,#0000FF 110px,#00FF00 135px,#FFFF00 160px,#FF7F00 185px,#FF0000 200px);
+    background:-webkit-radial-gradient(bottom,white 50px,#9400D3 50px ,#4B0082 85px ,#0000FF 110px,#00FF00 135px,#FFFF00 160px,#FF7F00 185px,#FF0000 200px);
+      background:-ms-radial-gradient(bottom,white 50px,#9400D3 50px ,#4B0082 85px ,#0000FF 110px,#00FF00 135px,#FFFF00 160px,#FF7F00 185px,#FF0000 200px);
+    color:blue;
+}
+/*The background-size property adds new functionality to CSS that allows us to specify the size of background images, using either lengths or percentages.
+background-size: 100px 100px;
+The two other possible values for background size are the keywords contain and cover. 
+
+The contain keyword scales the image so that it fits the container. 
+In other words, the image will grow or shrink proportionally, but the width and height will not exceed the container's dimensions:
+background-size also accepts the cover keyword. The image is scaled to fit the entire container; however, if that has a different aspect ratio, the image will be cropped:
+The background-clip property specifies the painting area of the background.
+
+The property takes three different values:
+
+border-box - (default) the background is painted to the outside edge of the border
+padding-box - the background is painted to the outside edge of the padding
+content-box - the background is painted within the content box
+
+In the example below, the first div with background-clip is set to padding-box; in the second div it's set to content-box.
+
+*/
+#ba {
+    border: 2px dotted black;
+    padding: 20px;
+    background: LightBlue;
+    background-clip: padding-box;
+}
+#ba0 {
+    border: 2px dotted black;
+    padding: 20px;
+    background: LightBlue;
+    background-clip: content-box;
+}
+/*By setting the background-clip property to padding-box, the borders will be made transparent.*/
+div.sherlyn {
+    border: 20px solid rgba(0, 0, 0, 0.3);
+    -moz-background-clip: padding-box; 
+    -webkit-background-clip: padding-box; 
+    background-clip: padding-box; 
+    width:200px;
+    position:absolute;
+    top:50px;
+    left:50px;
+    background-color:white;
+}
+/*Multiple background images are specified using a comma-separated list of values for the background-image property.
+Multiple backgrounds can also be specified using the background: shorthand property.
+background: url("http://www.sololearn.com/uploads/css_logo.png") right top no-repeat, 
+    url("http://www.sololearn.com/uploads/better-code.jpg") left top no-repeat; 
+    width: 400px;
+    height: 300px;
+    The opacity property value must be a number between 0.0 (fully transparent) and 1.0 (fully opaque).
+To have the opacity property work in all versions of IE, use the filter:alpha(opacity=x) along with the opacity property. x can take a value from 0 to 100.
+
+*/
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+/*CSS3 transitions allow us to change from one property value to another over a given duration. 
+transition-property - specifies the property to be transitioned
+transition-duration - specifies the duration over which transitions should occur
+transition-timing-function - specifies how the pace of the transition changes over its duration
+transition-delay - specifies a delay (in seconds) for the transition effect
+
+In the example below, we set the transition property to transform, with a duration of 5 seconds, and with an ease-in timing function that specifies a transition effect with a slow start.
+transition: transform 5s ease-in;
+The transition-timing-function property specifies the speed curve of the transition effect.
+It can have the following values:
+ease - the animation starts slowly, then accelerates quickly.
+ease-in - starts slowly, then accelerates, and stops abruptly.
+ease-out - starts quickly, but decelerates to a stop.
+ease-in-out - similar to ease, but with more subtle acceleration and deceleration.
+linear - constant speed throughout the animation; often best for color or opacity changes.
+
+Finally, we have cubic-bezier(), which allows you to define your own values in the cubic-bezier function. Possible values are numeric values from 0 to 1.
+
+*/
+div.gif {
+    width: 50px;
+    height: 50px;
+    background: #32CD32;
+    transition: width 3s;
+    transition-timing-function: cubic-bezier(0,0,1,1);
+    -webkit-transition: width 3s;
+    -webkit-transition-timing-function: cubic-bezier(0,0,1,1);
+}
+div.gif:hover {
+    width: 250px;
+}
+/*Negative value will result in a counter clockwise rotation.*/
+div.clock {
+    width: 200px;
+    height: 100px;
+    margin-top: 30px;
+    background-color: #32CD32;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+}
+/*The transform-origin property allows you to change the position of transformed elements. The default value for the property is 50% 50%, which corresponds to the center of the element.
+In the example below, we use the transform-origin property together with transform-rotate. The origin of the x-axis (horizontal) is set to 25% from the left. The origin for the y-axis (vertical) is set to 75% from above.
+*/
+div.empty-div {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid black;
+}
+div.green-div {
+    padding: 50px;
+    position: absolute;
+    background-color: #8bc34a;
+    border: 1px solid white;
+    transform: rotate(15deg);
+    transform-origin: 25% 75%;
+    -webkit-transform: rotate(15deg);
+    -webkit-transform-origin: 25% 75%;
+}
+/*The translate() method moves an element from its current position (according to the parameters given for the x-axis and the y-axis). Positive values will push an element down and to the right of its default position, while negative values will pull an element up and to the left of its default position.
+
+In this example below, the div element is moved 100px to the right and 50px down:
+transform:translate(100px, 50px);
+    -webkit-transform:translate(100px, 50px);
+    The skew() method skews an element along the x-axis and the y-axis by the given angles.
+
+The following example skews the <div> element by 30 degrees along the X-axis:
+transform: skew(30deg);
+If the second parameter is not specified, it has a zero value.
+The scale() method increases or decreases the size of an element, according to the parameters given for the width and height. 1 stands for the original size, 2 for twice the original size, and so on. 
+
+In the example below, we decreased the first div by the factor 0.7 both horizontally and vertically,
+div.first {
+    width: 200px;
+    height: 100px;
+    background-color: #8BC34A;
+    transform: scale(0.7, 0.7);
+    -webkit-transform: scale(0.7, 0.7);
+    color:white;
+} 
+If only one parameter is passed to the scale() method, it will apply that factor for both the height and the width.  
+Applying multiple transforms to an element is simple; just separate them using spaces. 
+Keyframes hold the styles the element will have at certain times
+The following example will change the background color of an element three times: when the animation is 50% complete, 70% complete, and when the animation is 100% complete.
+@keyframes example {
+   0%  {background-color: red;}
+   50%  {background-color: yellow;}
+   70%  {background-color: blue;}
+   100% {background-color: green;}
+}
+example is the name of the animation. You can choose any name for your animation.
+As an alternative to using percentages, you can use from and to keywords, where:
+from is a starting offset of 0%
+to is an ending offset of 100%.
+@keyframes colorchange {
+   0% {background-color: red;}
+   100% {background-color: green;}
+}
+@keyframes colorchange {
+   from {background-color: red;}
+   to {background-color: green;}
+}
+
+*/
+div.animation {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: colorchange;
+    animation-duration: 31s;
+    -webkit-animation-name: colorchange;
+    -webkit-animation-duration: 31s;
+}
+@keyframes colorchange {
+    0% {background-color: red; }
+    50% {background-color: green; }
+    100% {background-color: blue; }
+}
+@-webkit-keyframes colorchange {
+    0% {background-color: red; }
+    50% {background-color: green; }
+    100% {background-color: blue; }
+}
+/*animation-iterarion-count : infinite
+The animation-timing-function specifies the speed curve of an animation. It can have the following values:
+ease - specifies an animation with a slow start, then fast, then end slowly (this is default)
+linear - specifies an animation with the same speed from start to end
+ease-in - specifies an animation with a slow start
+ease-out - specifies an animation with a slow end
+ease-in-out - specifies an animation with a slow start and end
+cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+animation-iteration-count: 5;
+The animation-direction indicates how the keyframe should be applied.
+The values can be set as:
+normal - the default value, which means it plays forward from 0 % to 100%. 
+reverse - plays the keyframe in an opposite direction from 100 % to 0%
+alternate -  the animation first runs forward, then backward, then forward.
+alternate-reverse - the animation first runs backward, then forward, then backward.
+animation: colorchange 3s ease-in 1s infinite reverse;
+rotateX(), rotateY() and rotateZ() rotate an element in 3D space around the corresponding axis at a given degree.
+Perspective defines how the depth of the 3D scene is rendered. Think of perspective as a distance from the viewer to the object. The greater the value, the further the distance, so the less intense the visual effect.
+
+*/
+div.upar {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    perspective: 100px;
+    -webkit-perspective: 100px;
+}
+div.upar0 {
+    padding: 60px;
+    position: absolute;
+    background-color: #8bc34a;
+    border: 1px solid white;
+    transform: rotateX(45deg);
+    -webkit-transform: rotateX(45deg);
+}
+/*drop-shadow(w h b c) creates a shadow effect that extends beyond an image for the width w and height h with blur b and color c.
+w, h, and b are values in pixels.
+Positive values create the shadow to the right and below the image.
+Negative width and height values create the shadow above and to the left of the image.
+
+*/
+.dropshadow {
+    filter: drop-shadow(5px 9px 2px blue);
+    -webkit-filter: drop-shadow(5px 9px 2px blue);
+}
+/*
+0% grayscale is the original image, whereas 100% makes the image completely grayscale
+.filtered {
+  filter: grayscale(100%);
+}
+The sepia function converts an image to sepia. 
+This is similar to using grayscale but with a reddish-brown color tone. 
+The saturate function controls the color saturation for an image.
+0% creates a completely unsaturated image (grayscale), whereas 100% is the original image.
+Hue Color Circle
+
+0 deg = Red
+60 deg = Yellow
+120 deg = Green
+180 deg = Sky Blue
+240 deg = Blue
+300 deg = Pink
+The hue-rotate function applies a hue rotation (based on the color circle) to an image. 
+The invert function inverts the colors of an image to make dark areas bright and bright areas dark.
+0% invert leaves the image unchanged, whereas 100% creates a completely inverted image that is similar to a photographic negative.
+The brightness(amount) function adjusts the brightness of an image, making it appear brighter or darker. 
+The contrast function adjusts the contrast of the image. 
+The line-height property sets the height between lines in a block-level element, such as a paragraph.
+P
+{font-size: 12pt; line-height: 18pt}
+P {margin: 10px, 5px, 15px, 5px}
+If only two or three values are specified in the rule, the missing values are determined from the opposite sides.
+border-style:
+dotted
+dashed 
+solid
+double 
+groove
+ridge 
+inset
+outset
+Individual border styles can be controlled with border-top-style, border-bottom-style, border-left-style, and border-right-style.
+Multiple values are applied to borders in a clockwise order: top, right, bottom, left.
+Width can be specified by using the keywords thin, medium, and thick as values indicating the size of the border, or by using an absolute measurement such as 10 pixels.
+*/
+
+
+
